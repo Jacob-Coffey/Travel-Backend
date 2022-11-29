@@ -5,13 +5,13 @@ export const yelpRoutes = express.Router();
 
 yelpRoutes.get("/search", async (req, res) => {
 
-    let city: string = req.query.name as string;
+    let city: string = req.query.location as string;
 
     try{
-        const apiUrl = `https://api.yelp.com/v3/businesses/search`;
+        const apiUrl = `https://api.yelp.com/v3/businesses/search?location=${city}`;
 
         if(city === city){
-        let locationData = await fetch(apiUrl + `&location=Detroit}`, {
+        let locationData = await fetch(apiUrl, {
             headers: { Authorization: `Bearer 5_HYyg-3qca7lNcMH4CWAGXWQmiPZpI9cJut7uCuwYygLc11Gt6XtY-NJHSLJoK1Msv-z4g5wgtQ5LWwowCxKrTFbEoco64F-rZOlh0nh99uCGla9di6HH71c0N8Y3Yx`}
         });
         
@@ -27,10 +27,10 @@ yelpRoutes.get("/search", async (req, res) => {
 
 yelpRoutes.get("/details/:id", async (req, res) => {
 
-    //let id = req.params.id;
+    let id = req.params.id;
 
     try{
-        const apiUrl = `https://api.yelp.com/v3/businesses/WavvLdfdP6g8aZTtbBQHTw`;
+        const apiUrl = `https://api.yelp.com/v3/businesses/${id}`;
 
         let detailsData = await fetch(apiUrl, {
             headers: { Authorization: `Bearer 5_HYyg-3qca7lNcMH4CWAGXWQmiPZpI9cJut7uCuwYygLc11Gt6XtY-NJHSLJoK1Msv-z4g5wgtQ5LWwowCxKrTFbEoco64F-rZOlh0nh99uCGla9di6HH71c0N8Y3Yx`}
@@ -46,10 +46,10 @@ yelpRoutes.get("/details/:id", async (req, res) => {
 
 yelpRoutes.get("/reviews/:id", async (req, res) => {
 
-      //let id = req.params.id;
+      let id = req.params.id;
 
     try{
-        const apiUrl = `https://api.yelp.com/v3/businesses/WavvLdfdP6g8aZTtbBQHTw/reviews`;
+        const apiUrl = `https://api.yelp.com/v3/businesses/${id}`;
 
         let detailsData = await fetch(apiUrl, {
             headers: { Authorization: `Bearer 5_HYyg-3qca7lNcMH4CWAGXWQmiPZpI9cJut7uCuwYygLc11Gt6XtY-NJHSLJoK1Msv-z4g5wgtQ5LWwowCxKrTFbEoco64F-rZOlh0nh99uCGla9di6HH71c0N8Y3Yx`}
