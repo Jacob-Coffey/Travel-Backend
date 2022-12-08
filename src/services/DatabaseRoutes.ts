@@ -4,13 +4,16 @@ import { getClient } from '../db';
 
 export const databaseRoutes = express.Router();
 
-databaseRoutes.post("/list", async (req, res) => {
+databaseRoutes.post("/", async (req, res) => {
     const place = req.body as Businesses;
 
     try{
         const client = await getClient();
         const results = await client.db().collection<Businesses>("list").insertOne(place);
-        res.status(201).json({...place, _id: results.insertedId});
+        res.status(201);
+        console.log("It worked");
+        res.json(results);
+
     }
     catch(e){
         console.error("ERROR", e);
@@ -19,7 +22,7 @@ databaseRoutes.post("/list", async (req, res) => {
     }
 });
 
-databaseRoutes.get("/list", async (req, res) => {
+databaseRoutes.get("/", async (req, res) => {
     
     try{
         const client = await getClient();
@@ -33,7 +36,7 @@ databaseRoutes.get("/list", async (req, res) => {
 });
 
 
-databaseRoutes.delete("/list", async (req, res) => {
+databaseRoutes.delete("/", async (req, res) => {
     const place = req.body as Businesses
     try{
         const client = await getClient();
