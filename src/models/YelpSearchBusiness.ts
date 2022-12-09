@@ -1,4 +1,5 @@
-import { ObjectId } from "mongodb";
+import { ObjectId } from 'mongodb';
+
 
 export interface BusinessSearch {
     total: number;
@@ -6,10 +7,11 @@ export interface BusinessSearch {
     region: Region;
 }
 export interface Businesses {
+    _id?: ObjectId;
     rating: number;
     price: string;
     phone: string;
-    _id: ObjectId;
+    id: number;
     alias: string;
     is_closed: boolean;
     categories: Categories[];

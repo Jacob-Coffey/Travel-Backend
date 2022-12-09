@@ -12,5 +12,5 @@
   "compileOnSave": true,
   "include": [
     "src"
-, "../final/src/firebaseConfig.ts", "../final/src/AuthContextProvider.tsx", "../final/src/AuthContext.ts"  ]
+  ]
 }

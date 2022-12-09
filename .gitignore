@@ -4,7 +4,8 @@ lib/**/*.js.map
 
 # TypeScript v1 declaration files
 typings/
-.runtimeconfig.json
 
 # Node.js dependency directory
 node_modules/
+
+.runtimeconfig.json
