@@ -9,6 +9,6 @@ app.use(cors());
 app.use(express.json())
 
 app.use("/", yelpRoutes);
-app.use("/db", databaseRoutes)
+app.use("/db", databaseRoutes);
 
 export const api = functions.https.onRequest(app);

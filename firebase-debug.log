@@ -1,0 +1,113 @@
+[debug] [2022-12-12T18:21:38.030Z] ----------------------------------------------------------------------
+[debug] [2022-12-12T18:21:38.032Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jacob\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2022-12-12T18:21:38.032Z] CLI Version:   11.16.1
+[debug] [2022-12-12T18:21:38.032Z] Platform:      win32
+[debug] [2022-12-12T18:21:38.032Z] Node Version:  v16.15.1
+[debug] [2022-12-12T18:21:38.033Z] Time:          Mon Dec 12 2022 13:21:38 GMT-0500 (Eastern Standard Time)
+[debug] [2022-12-12T18:21:38.033Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-12T18:21:38.036Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-12-12T18:21:38.095Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-12T18:21:38.095Z] > authorizing via signed-in user (jacob23.coffey@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-12-12T18:21:38.103Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-12T18:21:38.104Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-12-12T18:21:38.111Z] [hub] writing locator at C:\Users\jacob\AppData\Local\Temp\hub-final-d9541.json
+[debug] [2022-12-12T18:21:38.131Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-12T18:21:38.132Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-12T18:21:38.132Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-12-12T18:21:38.163Z] defaultcredentials: writing to file C:\Users\jacob\AppData\Roaming\firebase\jacob23_coffey_gmail.com_application_default_credentials.json
+[debug] [2022-12-12T18:21:38.167Z] Setting GAC to C:\Users\jacob\AppData\Roaming\firebase\jacob23_coffey_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\jacob\\AppData\\Roaming\\firebase\\jacob23_coffey_gmail.com_application_default_credentials.json"}}
+[debug] [2022-12-12T18:21:38.168Z] > refreshing access token with scopes: []
+[debug] [2022-12-12T18:21:38.169Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-12-12T18:21:38.169Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-12T18:21:38.300Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-12-12T18:21:38.301Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-12-12T18:21:38.341Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-12-12T18:21:38.341Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-12T18:21:38.351Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/final-d9541/adminSdkConfig [none]
+[debug] [2022-12-12T18:21:38.606Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/final-d9541/adminSdkConfig 200
+[debug] [2022-12-12T18:21:38.606Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/final-d9541/adminSdkConfig {"projectId":"final-d9541","storageBucket":"final-d9541.appspot.com"}
+[debug] [2022-12-12T18:21:38.630Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-12-12T18:21:38.631Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-12-12T18:21:38.631Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\jacob\\.cache\\firebase\\emulators\\ui-v1.11.1\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\jacob\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.1\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-12-12T18:21:38.764Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2022-12-12T18:21:38.764Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\jacob\Desktop\Grand Circus\Final\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\jacob\\Desktop\\Grand Circus\\Final\\functions\" for Cloud Functions..."}}
+[debug] [2022-12-12T18:21:38.905Z] Validating nodejs source
+[debug] [2022-12-12T18:21:41.040Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "serve:dev": "npm run build && concurrently \"tsc --watch\" \"firebase emulators:start --only functions\"",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase": "^9.15.0",
+    "firebase-admin": "^10.2.0",
+    "firebase-functions": "^4.1.0",
+    "mongodb": "^4.12.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.14",
+    "@types/node-fetch": "^2.6.2",
+    "concurrently": "^7.6.0",
+    "typescript": "^4.9.3"
+  },
+  "private": true
+}
+[debug] [2022-12-12T18:21:41.040Z] Building nodejs source
+[debug] [2022-12-12T18:21:41.040Z] Analyzing nodejs backend spec
+[debug] [2022-12-12T18:21:41.041Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-12T18:21:41.233Z] Serving at port 9005
+
+[debug] [2022-12-12T18:21:41.604Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-12T18:21:41.609Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/final-d9541/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/final-d9541/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-12-13T00:15:33.299Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-13T00:15:33.302Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-13T00:15:33.303Z] Accepted request GET /final-d9541/us-central1/api/search?location=Detroit&categories=beautysvc&price=3 --> us-central1-api
+[debug] [2022-12-13T00:15:33.314Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-13T00:15:33.315Z] [functions] Got req.url=/final-d9541/us-central1/api/search?location=Detroit&categories=beautysvc&price=3, mapping to path=/search?location=Detroit&categories=beautysvc&price=3 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/final-d9541/us-central1/api/search?location=Detroit&categories=beautysvc&price=3, mapping to path=/search?location=Detroit&categories=beautysvc&price=3"}}
+[debug] [2022-12-13T00:15:33.328Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-12-13T00:15:33.328Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-12-13T00:15:34.997Z] [runtime-status] [13820] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"C:\\Users\\jacob\\Desktop\\Grand Circus\\Final\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [13820] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"C:\\\\Users\\\\jacob\\\\Desktop\\\\Grand Circus\\\\Final\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-12-13T00:15:34.998Z] [runtime-status] [13820] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.0","resolution":"C:\\Users\\jacob\\Desktop\\Grand Circus\\Final\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [13820] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.1.0\",\"resolution\":\"C:\\\\Users\\\\jacob\\\\Desktop\\\\Grand Circus\\\\Final\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2022-12-13T00:15:34.999Z] [runtime-status] [13820] Found local functions config: C:\Users\jacob\Desktop\Grand Circus\Final\functions/.runtimeconfig.json {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [13820] Found local functions config: C:\\Users\\jacob\\Desktop\\Grand Circus\\Final\\functions/.runtimeconfig.json"}}
+[debug] [2022-12-13T00:15:34.999Z] [runtime-status] [13820] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [13820] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-12-13T00:15:35.000Z] [runtime-status] [13820] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.0","resolution":"C:\\Users\\jacob\\Desktop\\Grand Circus\\Final\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [13820] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.1.0\",\"resolution\":\"C:\\\\Users\\\\jacob\\\\Desktop\\\\Grand Circus\\\\Final\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}

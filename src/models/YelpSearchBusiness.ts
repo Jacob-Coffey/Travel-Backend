@@ -19,7 +19,7 @@ export interface Businesses {
     name: string;
     url: string;
     coordinates: Coordinates;
-    img_url: string;
+    image_url: string;
     location: string;
     distance: number;
 }

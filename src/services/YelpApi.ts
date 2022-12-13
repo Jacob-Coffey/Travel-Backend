@@ -27,6 +27,33 @@ yelpRoutes.get("/search", async (req, res) => {
             let jsonData = await locationData.json();
             res.json(jsonData);
             }
+
+            if(category === "nightlife"){
+                let locationData = await fetch(apiUrl + "&categories=nightlife", {
+                    headers: { Authorization: `Bearer 5_HYyg-3qca7lNcMH4CWAGXWQmiPZpI9cJut7uCuwYygLc11Gt6XtY-NJHSLJoK1Msv-z4g5wgtQ5LWwowCxKrTFbEoco64F-rZOlh0nh99uCGla9di6HH71c0N8Y3Yx`}
+                });
+                
+                let jsonData = await locationData.json();
+                res.json(jsonData);
+                }
+
+                if(category === "beautysvc"){
+                    let locationData = await fetch(apiUrl + "&categories=beautysvc", {
+                        headers: { Authorization: `Bearer 5_HYyg-3qca7lNcMH4CWAGXWQmiPZpI9cJut7uCuwYygLc11Gt6XtY-NJHSLJoK1Msv-z4g5wgtQ5LWwowCxKrTFbEoco64F-rZOlh0nh99uCGla9di6HH71c0N8Y3Yx`}
+                    });
+                    
+                    let jsonData = await locationData.json();
+                    res.json(jsonData);
+                    }
+
+                    if(category === "shopping"){
+                        let locationData = await fetch(apiUrl + "&categories=shopping", {
+                            headers: { Authorization: `Bearer 5_HYyg-3qca7lNcMH4CWAGXWQmiPZpI9cJut7uCuwYygLc11Gt6XtY-NJHSLJoK1Msv-z4g5wgtQ5LWwowCxKrTFbEoco64F-rZOlh0nh99uCGla9di6HH71c0N8Y3Yx`}
+                        });
+                        
+                        let jsonData = await locationData.json();
+                        res.json(jsonData);
+                        }
     }
     catch (e){
         console.error("ERROR", e);
